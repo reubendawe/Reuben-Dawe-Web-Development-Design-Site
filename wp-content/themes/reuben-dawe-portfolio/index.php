@@ -14,7 +14,7 @@
 
                <div class="home__perfil">
                   <div class="home__image">
-                     <img src="assets/img/me.png" alt="image" class="home__img">
+                     <img src="<?php echo get_theme_file_uri('/images/reuben-george-dawe-portfolio-intro-image.png') ?>" alt="image" class="home__img">
                      <div class="home__shadow"></div> 
                   </div>
                </div>
