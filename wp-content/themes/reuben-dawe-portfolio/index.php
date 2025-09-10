@@ -46,7 +46,7 @@
 
                <div class="about__perfil">
                   <div class="about__image">
-                     <img src="assets/img/cate.png" alt="image" class="about__img">
+                     <img src="<?php echo get_theme_file_uri('/images/reuben-george-dawe-bio-image.png'); ?>" alt="image" class="about__img">
 
                      <div class="about__shadow"></div>
 
@@ -59,8 +59,8 @@
 
                   <ul class="about__list">
                      <li class="about__item">
-                        <b>My Front End Skills Are:</b> HTML, CSS, JavaScript, 
-                        React, GitHub, Bootstrap &amp; GSAP - Indepth experience using VScode &amp; Wordpress.
+                        <b>My Front End Skills Are:</b> PHP, HTML, CSS, JavaScript, 
+                        Git, Bootstrap &amp; GSAP - Indepth experience using VScode, PHPStorm &amp; Wordpress.
                      </li>
                      <br />
                      <li>
