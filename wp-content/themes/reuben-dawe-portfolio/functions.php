@@ -14,7 +14,8 @@ function portfolio_post_types() {
         'public' => true, 
         'labels' => array(
             'name' => 'Portfolio'
-        )
+        ),
+        'menu_icon' => 'dashicons-portfolio'
     ));
 }
 
