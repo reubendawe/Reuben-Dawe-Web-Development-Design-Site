@@ -199,14 +199,10 @@
 
          <!--==================== PROJECTS ====================-->
 
-         <section class="projects section" id="projects">
-            <h2 class="section__title-1">
                <span>Portfolio.</span>
             </h2>
 
-            <div class="projects__container container grid">
-                
-                <article class="projects__card">
+         
 
                 <?php 
                 $homepageEvents = new WP_Query(array(
@@ -216,218 +212,44 @@
 
                 while($homepageEvents->have_posts()) {
                     $homepageEvents->the_post(); ?>
-                    <li><?php the_title(); ?></li>
+                    <section class="projects section" id="projects">
+                        <h2 class="section__title-1">
+                           <div class="projects__container container grid">
+                              
+                              <article class="projects__card">
+
+                                 <div class="projects__image">
+                                    <img src="assets/img/shuckshirt.png" alt="image" class="projects__img">
+
+                                    <a href="https://github.com/pinkdawe/AJ-Holmes-Website" class="projects__button button">
+                                       <i class="ri-github-fill"></i>
+                                    </a>
+                                 </div>
+
+                                 <div class="projects__content">
+                                    <h3 class="projects__subtitle">Merchandise</h3>
+                                    <h2 class="projects__title">Kulk Band</h2>
+
+                                    <p class="projects__description">
+                                    Merchandise design for Norwich-based noise band, Kulk.
+                                    </p>
+                                 </div>
+
+                                 <div class="projects__buttons">
+                                    <a href="#" target="_blank" class="projects__link">
+                                       <i class="ri-instagram-fill"></i> View
+                                    </a>
+
+                                    <!-- <a href="#" target="_blank" class="projects__link">
+                                       <i class="ri-computer-fill"></i> View
+                                    </a> -->
+                                 </div>
+                              </article> 
+                              
+                           </div>
+                     </section>
                 <?php } 
                 ?>
-
-                  <div class="projects__image">
-                     <img src="assets/img/shuckshirt.png" alt="image" class="projects__img">
-
-                     <a href="https://github.com/pinkdawe/AJ-Holmes-Website" class="projects__button button">
-                        <i class="ri-github-fill"></i>
-                     </a>
-                  </div>
-
-                  <div class="projects__content">
-                     <h3 class="projects__subtitle">Merchandise</h3>
-                     <h2 class="projects__title">Kulk Band</h2>
-
-                     <p class="projects__description">
-                       Merchandise design for Norwich-based noise band, Kulk.
-                     </p>
-                  </div>
-
-                  <div class="projects__buttons">
-                     <a href="#" target="_blank" class="projects__link">
-                        <i class="ri-instagram-fill"></i> View
-                     </a>
-
-                  <!-- <a href="#" target="_blank" class="projects__link">
-                        <i class="ri-computer-fill"></i> View
-                     </a> -->
-                  </div>
-               </article>
-                
-                <article class="projects__card">
-                  <div class="projects__image">
-                     <img src="assets/img/AJholmessite.png" alt="image" class="projects__img">
-
-                     <a href="https://github.com/pinkdawe/AJ-Holmes-Website" class="projects__button button">
-                        <i class="ri-github-fill"></i>
-                     </a>
-                  </div>
-
-                  <div class="projects__content">
-                     <h3 class="projects__subtitle">Website</h3>
-                     <h2 class="projects__title">A J. Holmes Building</h2>
-
-                     <p class="projects__description">
-                        A fully responsive website for Bridport-based Building Company, A J. Holmes. Programmed on VSCode using HTML, CSS &amp; Javascript.
-                     </p>
-                  </div>
-
-                  <div class="projects__buttons">
-                     <a href="https://github.com/pinkdawe/AJ-Holmes-Website" target="_blank" class="projects__link">
-                        <i class="ri-github-fill"></i> View
-                     </a>
-
-                  <!-- <a href="#" target="_blank" class="projects__link">
-                        <i class="ri-computer-fill"></i> View
-                     </a> -->
-                  </div>
-               </article>
-                
-                <article class="projects__card">
-                  <div class="projects__image">
-                     <img src="assets/img/herbertsthumbnail.png" alt="image" class="projects__img">
-
-                     <a href="https://github.com/pinkdawe/Herbert-s-Bakery-Site" class="projects__button button">
-                        <i class="ri-github-fill"></i>
-                     </a>
-                  </div>
-
-                  <div class="projects__content">
-                     <h3 class="projects__subtitle">Website</h3>
-                     <h2 class="projects__title">Herbert's Bakery, Bristol</h2>
-
-                     <p class="projects__description">
-                        A fully responsive website for Bristol-based bakery, Herbert's. Programmed on VSCode using HTML, CSS &amp; Javascript.
-                     </p>
-                  </div>
-
-                  <div class="projects__buttons">
-                     <a href="https://github.com/pinkdawe/Herbert-s-Bakery-Site" target="_blank" class="projects__link">
-                        <i class="ri-github-fill"></i> View
-                     </a>
-
-                  <!-- <a href="#" target="_blank" class="projects__link">
-                        <i class="ri-computer-fill"></i> View
-                     </a> -->
-                  </div>
-               </article>
-               
-               
-               <article class="projects__card">
-                  <div class="projects__image">
-                     <img src="assets/img/EPPcard.png" alt="image" class="projects__img">
-
-                     <a href="https://www.ethicalpolicy.co.uk" class="projects__button button">
-                        <i class="ri-search-eye-fill"></i>
-                     </a>
-                  </div>
-
-                  <div class="projects__content">
-                     <h3 class="projects__subtitle">Brand Identity</h3>
-                     <h2 class="projects__title">The Ethical Policy Project</h2>
-
-                     <p class="projects__description">
-                        A Brand Identity for a London-based Think Tank - Includes Website, Logo, Drafts,
-                        Typography &amp; Business Cards.
-                     </p>
-                  </div>
-
-                  <div class="projects__buttons">
-                     <a href="https://uk.linkedin.com/company/the-ethical-policy-project" target="_blank" class="projects__link">
-                        <i class="ri-linkedin-fill"></i> View
-                     </a>
-
-                  <a href="https://www.ethicalpolicy.co.uk" target="_blank" class="projects__link">
-                        <i class="ri-computer-fill"></i> View
-                     </a> 
-                  </div>
-               </article>
-
-               <article class="projects__card">
-                  <div class="projects__image">
-                     <img src="assets/img/RoweNaturalsApp.png" alt="image" class="projects__img">
-
-                     <a href="https://rowenaturals-app.vercel.app" class="projects__button button">
-                        <i class="ri-search-eye-fill"></i>
-                     </a>
-                  </div>
-
-                  <div class="projects__content">
-                     <h3 class="projects__subtitle">Web App, Brand Identity &amp; Packaging</h3>
-                     <h2 class="projects__title">Rowe Naturals - Organic Tallow-Based Body Care</h2>
-
-                     <p class="projects__description">
-                        A Full Stack Web App &amp; Brand Identity for a Nebraska-Based Body Care Company - Includes Full Stack Web App, Logo, Typography, Packaging
-                        &amp; Drafts. Full Stack Web app programmed on VSCode using React.JS, TypeScript, Next 13, TailwindCSS &amp; Sanity  - Includes full payment (Stripe) integration.
-                     </p>
-                  </div>
-
-                  <div class="projects__buttons">
-                     <a href="https://www.instagram.com/rowenaturals/" target="_blank" class="projects__link">
-                        <i class="ri-instagram-fill"></i> View
-                     </a>
-
-                      <a href="https://github.com/pinkdawe/rowenaturals-app" target="_blank" class="projects__link">
-                        <i class="ri-github-fill"></i> View
-                     </a> 
-                  </div>
-               </article>
-
-               <article class="projects__card">
-                  <div class="projects__image">
-                     <img src="assets/img/jjgale.png" alt="image" class="projects__img">
-
-                     <a href="https://www.instagram.com/p/Cz9Qx_vMIdy/" class="projects__button button">
-                        <i class="ri-search-eye-fill"></i>
-                     </a>
-                  </div>
-
-                  <div class="projects__content">
-                     <h3 class="projects__subtitle">Social Media Marketing</h3>
-                     <h2 class="projects__title">Jj Gale (Pro Wrestler) - Social Media Promotional</h2>
-
-                     <p class="projects__description">
-                        Multiple Promotional Graphics for Southampton-based professional Wrestler, Jj Gale
-                     </p>
-                  </div>
-
-                  <div class="projects__buttons">
-                     <a href="https://www.instagram.com/p/Cz9Qx_vMIdy/" target="_blank" class="projects__link">
-                        <i class="ri-instagram-fill"></i> View
-                     </a>
-
-                     <a href="https://www.instagram.com/jjgale_pw/" target="_blank" class="projects__link">
-                        <i class="ri-computer-fill"></i> View
-                     </a>
-                  </div>
-               </article>
-               
-               <article class="projects__card">
-                  <div class="projects__image">
-                     <img src="assets/img/WaterfordSMG.png" alt="image" class="projects__img">
-
-                     <a href="https://www.facebook.com/waterfordmuaythai" class="projects__button button">
-                        <i class="ri-facebook-fill"></i>
-                     </a>
-                  </div>
-
-                  <div class="projects__content">
-                     <h3 class="projects__subtitle">Social Media Marketing</h3>
-                     <h2 class="projects__title">Waterford Muay Thai Club</h2>
-
-                     <p class="projects__description">
-                        Multiple Social Media Marketing Graphics, Posters, Timetables and Event Promotions for Waterford Muay Thai Club, Ireland.
-                     </p>
-                  </div>
-
-                  <div class="projects__buttons">
-                     <a href="https://www.facebook.com/waterfordmuaythai" target="_blank" class="projects__link">
-                        <i class="ri-facebook-fill"></i> View
-                     </a>
-
-                     <!-- <a href="https://www.instagram.com/jjgale_pw/" target="_blank" class="projects__link">
-                        <i class="ri-computer-fill"></i> View
-                     </a> -->
-                  </div>
-               </article>
-
-               
-            </div>
-         </section>
 
          <!--==================== CONTACT ====================-->
 
