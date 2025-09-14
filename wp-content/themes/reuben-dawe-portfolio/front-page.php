@@ -199,22 +199,22 @@
 
          <!--==================== PROJECTS ====================-->
 
-               <span>Portfolio.</span>
-            </h2>
+               
 
-         
+            <section class="projects section" id="projects">
+                        <h2 class="section__title-1"><span>Portfolio.</span></h2>
+                        <div class="projects__container container grid">
 
                 <?php 
                 $homepageEvents = new WP_Query(array(
-                    'posts_per_page' => 2,
+                    'posts_per_page' => -1,
                     'post_type' => 'event'
                 ));
 
                 while($homepageEvents->have_posts()) {
                     $homepageEvents->the_post(); ?>
-                    <section class="projects section" id="projects">
-                        <h2 class="section__title-1">
-                           <div class="projects__container container grid">
+   
+                           
                               
                               <article class="projects__card">
 
@@ -228,7 +228,7 @@
 
                                  <div class="projects__content">
                                     <h3 class="projects__subtitle">Merchandise</h3>
-                                    <h2 class="projects__title"><?php the_title() ;?></h2>
+                                    <h2 class="projects__title"><a href="<?php the_permalink(); ?>"><?php the_title() ;?></a></h2>
 
                                     <p class="projects__description">
                                        <?php echo get_the_excerpt(); ?>                                    
@@ -246,10 +246,12 @@
                                  </div>
                               </article> 
                               
-                           </div>
-                     </section>
+                           
                 <?php } 
                 ?>
+
+                </div>
+                     </section>
 
          <!--==================== CONTACT ====================-->
 
