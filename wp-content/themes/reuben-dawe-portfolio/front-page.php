@@ -197,13 +197,14 @@
             </div>
          </section>
 
-         <!--==================== PROJECTS ====================-->
-
-               
+         <!--==================== PROJECTS ====================--> 
 
             <section class="projects section" id="projects">
-                        <h2 class="section__title-1"><span>Portfolio.</span></h2>
-                        <div class="projects__container container grid">
+               <h2 class="section__title-1">
+                  <span>Portfolio.</span>
+               </h2>
+               
+               <div class="projects__container container grid">
 
                 <?php 
                 $homepageEvents = new WP_Query(array(
@@ -214,36 +215,35 @@
                 while($homepageEvents->have_posts()) {
                     $homepageEvents->the_post(); ?>
    
-                              <article class="projects__card">
+                        <article class="projects__card">
 
-                                 <div class="projects__image">
-                                    <img><?php the_post_thumbnail(); ?></img>
+                           <div class="projects__image">
+                              <img><?php the_post_thumbnail(); ?></img>
 
-                                    <a href="https://github.com/pinkdawe/AJ-Holmes-Website" class="projects__button button">
-                                       <i class="ri-github-fill"></i>
-                                    </a>
-                                 </div>
+                              <a href="https://github.com/pinkdawe/AJ-Holmes-Website" class="projects__button button">
+                                 <i class="ri-github-fill"></i>
+                              </a>
+                           </div>
 
-                                 <div class="projects__content">
-                                    <h3 class="projects__subtitle">Merchandise</h3>
-                                    <h2 class="projects__title"><a href="<?php the_permalink(); ?>"><?php the_title() ;?></a></h2>
+                           <div class="projects__content">
+                              <h3 class="projects__subtitle">Merchandise</h3>
+                              <h2 class="projects__title"><a href="<?php the_permalink(); ?>"><?php the_title() ;?></a></h2>
 
-                                    <p class="projects__description">
-                                       <?php echo get_the_excerpt(); ?>                                    
-                                    </p>
-                                 </div>
+                              <p class="projects__description">
+                                 <?php echo get_the_excerpt(); ?>                                    
+                              </p>
+                           </div>
 
-                                 <div class="projects__buttons">
-                                    <a href="#" target="_blank" class="projects__link">
-                                       <i class="ri-instagram-fill"></i> View
-                                    </a>
+                           <div class="projects__buttons">
+                              <a href="#" target="_blank" class="projects__link">
+                                 <i class="ri-instagram-fill"></i> View
+                              </a>
 
-                                    <!-- <a href="#" target="_blank" class="projects__link">
-                                       <i class="ri-computer-fill"></i> View
-                                    </a> -->
-                                 </div>
-                              </article> 
-                           
+                              <!-- <a href="#" target="_blank" class="projects__link">
+                                 <i class="ri-computer-fill"></i> View
+                              </a> -->
+                           </div>
+                        </article> 
                 <?php } 
                 ?>
 
