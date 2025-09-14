@@ -228,10 +228,10 @@
 
                                  <div class="projects__content">
                                     <h3 class="projects__subtitle">Merchandise</h3>
-                                    <h2 class="projects__title">Kulk Band</h2>
+                                    <h2 class="projects__title"><?php the_title() ;?></h2>
 
                                     <p class="projects__description">
-                                    Merchandise design for Norwich-based noise band, Kulk.
+                                       <?php echo get_the_excerpt(); ?>                                    
                                     </p>
                                  </div>
 
