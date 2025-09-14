@@ -8,7 +8,8 @@
             'all_items' => 'All Portfolio Entries',
             'singular_name' => 'Event'
         ),
-        'menu_icon' => 'dashicons-portfolio'
+        'menu_icon' => 'dashicons-portfolio',
+        'supports' => array('title', 'editor', 'thumbnail')
     ));
 }
 

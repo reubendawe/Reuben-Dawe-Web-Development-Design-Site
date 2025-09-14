@@ -214,12 +214,10 @@
                 while($homepageEvents->have_posts()) {
                     $homepageEvents->the_post(); ?>
    
-                           
-                              
                               <article class="projects__card">
 
                                  <div class="projects__image">
-                                    <img src="assets/img/shuckshirt.png" alt="image" class="projects__img">
+                                    <img><?php the_post_thumbnail(); ?></img>
 
                                     <a href="https://github.com/pinkdawe/AJ-Holmes-Website" class="projects__button button">
                                        <i class="ri-github-fill"></i>
@@ -245,7 +243,6 @@
                                     </a> -->
                                  </div>
                               </article> 
-                              
                            
                 <?php } 
                 ?>
