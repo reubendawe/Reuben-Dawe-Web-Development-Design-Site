@@ -1,0 +1,28 @@
+{
+  "dependencies": {
+    "sass": "^1.92.1"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.21",
+    "gulp": "^5.0.1",
+    "gulp-autoprefixer": "^10.0.0",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-postcss": "^10.0.0",
+    "gulp-rename": "^2.1.0",
+    "gulp-sass": "^6.0.1"
+  },
+  "name": "reuben-dawe-portfolio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "browserslist": [
+    "last 3 versions"
+  ],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs"
+}
