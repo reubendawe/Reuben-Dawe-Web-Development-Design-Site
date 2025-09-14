@@ -445,29 +445,29 @@
                   <form action="" class="contact__form" id="contact-form">
                      <div class="contact__group">
                         <div class="contact__box">
-                           <input type="text" name="user_name" class="contact__input" id="name" required placeholder="First Name">
+                           <input type="text" name="cf_name" class="contact__input" id="name" required placeholder="First Name">
                            <label for="name" class="contact__label">First Name</label>
                         </div>
    
                         <div class="contact__box">
-                           <input type="email" name="user_email" class="contact__input" id="email" required placeholder="Email Address">
+                           <input type="email" name="cf_email" class="contact__input" id="email" required placeholder="Email Address">
                            <label for="email" class="contact__label">Email Address</label>
                         </div>
                      </div>
                      
                      <div class="contact__box">
-                        <input type="text" name="user_subject" class="contact__input" id="subject" required placeholder="Subject">
+                        <input type="text" name="cf_subject" class="contact__input" id="subject" required placeholder="Subject">
                         <label for="subject" class="contact__label">Subject</label>
                      </div>
 
                      <div class="contact__box contact__area">
-                        <textarea name="user_message" class="contact__input" id="message" required placeholder="Message"></textarea>
+                        <textarea name="cf_message" class="contact__input" id="message" required placeholder="Message"></textarea>
                         <label for="message" class="contact__label">Message</label>
                      </div>
 
                      <p class="contact__message" id="contact-message"></p>
 
-                     <button type="submit" class="contact__button button">
+                     <button type="submit" name="cf_submitted" class="contact__button button">
                         <i class="ri-mail-send-fill"></i> Reach Out
                      </button>
                   </form>
